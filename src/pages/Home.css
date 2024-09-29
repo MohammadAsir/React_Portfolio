@@ -1,0 +1,152 @@
+/* src/pages/Home.css */
+
+.home-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: relative;
+  overflow: hidden;
+  background-color: #252526; /* Static background color */
+}
+
+.name-section {
+  flex: 1;
+}
+
+.my-name {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.links-section {
+  flex: 1;
+  text-align: right;
+}
+
+.home-link {
+  display: block;
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.home-link:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%; /* Add some vertical padding */
+  }
+
+  .name-section {
+    order: 1;
+    word-wrap: break-word;
+  }
+
+  .profile-image {
+    order: 2;
+    margin-top: 2rem;
+    text-align: center;
+    
+  }
+
+  .links-section {
+    order: 3;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .my-name {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  .home-link {
+    font-size: 2rem;
+  }
+
+  .profile-image img {
+    margin-left: 0; /* Center the image */
+  }
+}
+@media (max-width: 480px) {
+  .my-name {
+    font-size: 1.8rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .home-link {
+    font-size: 1.8rem;
+  }
+
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #fff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+.links-section {
+  flex: 1;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .links-section {
+    text-align: center;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
+.intro-text {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.profile-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 250px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin-left: 120px;
+}
+

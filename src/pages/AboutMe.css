@@ -1,0 +1,56 @@
+/* src/pages/AboutMe.css */
+
+.main-content {
+    padding: 2rem 5%;
+  }
+  
+  .main-content-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-content-text {
+    flex: 1 1 45%;
+  }
+  
+  .main-content-text h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .main-content-text p {
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .main-content-image {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+  
+  .main-content-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main-content-holder {
+      flex-direction: column;
+    }
+  
+    .main-content-text,
+    .main-content-image {
+      flex: none;
+      width: 100%;
+    }
+  
+    .main-content-image {
+      margin-top: 2rem;
+    }
+  }
+  

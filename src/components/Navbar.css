@@ -1,0 +1,147 @@
+/* src/components/Navbar.css */
+
+/* Common styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E1E1E;
+  padding: 1rem 5%;
+}
+
+.navbar-logo a {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 2rem;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-links li a:hover {
+  color: #ccc;
+}
+
+/* Hide desktop navbar on mobile */
+@media (max-width: 768px) {
+  .desktop-navbar {
+    display: none;
+  }
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 769px) {
+  .hamburger-menu,
+  .off-screen-menu {
+    display: none;
+  }
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 1100;
+}
+
+.hamburger-menu .ham-bar {
+  width: 70%;
+  height: 4px;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform .6s, opacity .8s, top .6s;
+}
+
+.hamburger-menu .bar-top {
+  top: 25%;
+}
+
+.hamburger-menu .bar-mid {
+  top: 50%;
+}
+
+.hamburger-menu .bar-bottom {
+  top: 75%;
+}
+
+.hamburger-menu.active .bar-top {
+  transform: translateX(-50%) rotate(-315deg);
+  top: 50%;
+}
+
+.hamburger-menu.active .bar-mid {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom {
+  transform: translateX(-50%) rotate(-225deg);
+  top: 50%;
+}
+
+.title-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.off-screen-menu {
+  position: fixed;
+  top: 0;
+  right: -50%; /* Changed from left to right */
+  background-color: #302d31;
+  height: 100%;
+  width: 50%;
+  transition: right 0.3s ease; /* Changed from left to right */
+  z-index: 1000;
+}
+
+.off-screen-menu.active {
+  right: 0; /* Changed from left to right */
+}
+
+.navs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2rem;
+}
+
+.navs ul li {
+  margin-bottom: 1.5rem;
+}
+
+.navs ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Adjust menu width for different screen sizes */
+@media (max-width: 480px) {
+  .off-screen-menu {
+    width: 70%;
+  }
+}
