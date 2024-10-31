@@ -112,10 +112,12 @@
   .my-name {
     font-size: 2.2rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .intro-text {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   .home-link {
@@ -145,4 +147,9 @@
     margin-left: 0;
   }
 }
-
+@media (max-width: 460px) {
+  .my-name {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

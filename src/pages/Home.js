@@ -11,7 +11,7 @@ function Home() {
           <span className="typewriter">Mohammad Shaker Asir</span>
         </h1>
         <p className="intro-text">
-          Software Developer | Passionate about building impactful applications
+          Aspiring Software Engineer|Tech Enthusiast|looking for opportunities
         </p>
       </div>
       
