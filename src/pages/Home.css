@@ -1,8 +1,9 @@
 /* src/pages/Home.css */
 
+
 .home-container {
   display: flex;
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Allows the container to expand */
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -37,6 +38,49 @@
 
 .home-link:hover {
   color: #ccc;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
+.intro-text {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.profile-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 250px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin-left: 120px;
+}
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #fff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+.links-section {
+  flex: 1;
+  text-align: right;
 }
 
 @media (max-width: 768px) {
@@ -98,55 +142,7 @@
   .profile-image img {
     width: 150px;
     height: 150px;
+    margin-left: 0;
   }
-}
-.typewriter {
-  display: inline-block;
-  overflow: hidden;
-  border-right: .15em solid #fff;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
-    typing 2.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-.links-section {
-  flex: 1;
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .links-section {
-    text-align: center;
-  }
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #fff }
-}
-.intro-text {
-  font-size: 1.5rem;
-  color: #ccc;
-  margin-top: 1rem;
-}
-
-.profile-image {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.profile-image img {
-  width: 200px;
-  height: 250px;
-  border-radius: 25%;
-  object-fit: cover;
-  margin-left: 120px;
 }
 

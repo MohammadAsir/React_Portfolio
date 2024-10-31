@@ -1,56 +1,55 @@
 /* src/pages/AboutMe.css */
 
 .main-content {
-    padding: 2rem 5%;
+  padding: 2rem 5%;
+  color: #fff;
+}
+
+.main-content-text {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content-text h2,
+.main-content-text h3 {
+  color: orange; /* Changed heading color to orange */
+  margin-bottom: 1rem;
+}
+
+.main-content-text p,
+.main-content-text ul {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.main-content-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Styling for inline images */
+.inline-image {
+  width: 120px; /* Adjusted size for smaller images */
+  height: auto;
+  border-radius: 10px;
+  margin: 0 0 15px 15px; /* Margin: top right bottom left */
+  float: right; /* Images float to the right */
+}
+
+/* Clear floats */
+.main-content-text::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removed .highlight class as it's no longer needed */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .inline-image {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
   }
-  
-  .main-content-holder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .main-content-text {
-    flex: 1 1 45%;
-  }
-  
-  .main-content-text h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
-  .main-content-text p {
-    color: #ccc;
-    line-height: 1.6;
-  }
-  
-  .main-content-image {
-    flex: 1 1 45%;
-    text-align: center;
-  }
-  
-  .main-content-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .main-content-holder {
-      flex-direction: column;
-    }
-  
-    .main-content-text,
-    .main-content-image {
-      flex: none;
-      width: 100%;
-    }
-  
-    .main-content-image {
-      margin-top: 2rem;
-    }
-  }
-  
+}

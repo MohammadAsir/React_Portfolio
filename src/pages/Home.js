@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import profileImage from './profile.jpg';
+import profileImage from '../img/profile.jpg';
 function Home() {
   return (
     <div className="home-container">

@@ -51,10 +51,14 @@ function Navbar() {
   }, [menuActive]);
 
   // Only render Navbar if not on the Home page
-  if (location.pathname === '/') {
+  if (
+    location.pathname === '/' || 
+    location.pathname === '/index' || 
+    location.pathname === '/index.html' || 
+    location.pathname.startsWith('/#')
+  ) {
     return null;
   }
-
   return (
     <>
       {isMobile ? (

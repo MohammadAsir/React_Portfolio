@@ -1,17 +1,28 @@
 /* src/pages/ContactInfo.css */
 
 .contact-info {
-    padding: 2rem 5%;
-    color: #fff;
-  }
-  
-  .contact-info h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-info p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
+  padding: 2rem 5%;
+  color: #fff;
+}
+
+.contact-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list .icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
