@@ -63,7 +63,6 @@
   height: 250px;
   border-radius: 25%;
   object-fit: cover;
-  /* Removed margin-left */
 }
 
 .typewriter {
@@ -78,16 +77,30 @@
     blink-caret .5s step-end infinite;
 }
 
-@media (max-width: 1650px) {
-  .home-link {
-    font-size: 2.3rem;
-  }
+@media (max-width: 1300px) {
   .my-name {
     font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+    text-align: center;
   }
+
+  .intro-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .home-link {
+    font-size: 2.2rem;
+  }
+  .profile-image img {
+    width: 180px;
+    height: 220px;
+  }  
 }
 
-@media (max-width: 768px) {
+/* Adjusted breakpoint from 768px to 1150px */
+@media (max-width: 1150px) {
   .home-container {
     flex-direction: column;
     align-items: center;
@@ -110,22 +123,21 @@
     order: 3;
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.9rem;
   }
 
   .my-name {
-    font-size: 2.2rem;
+    font-size: 3.4rem;
     margin-bottom: 1rem;
     text-align: center;
   }
 
   .intro-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 
   .home-link {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 
   .profile-image img {
@@ -133,9 +145,10 @@
   }
 }
 
-@media (max-width: 480px) {
+/* Adjust subsequent breakpoints if needed */
+@media (max-width: 768px) {
   .my-name {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .intro-text {
@@ -147,9 +160,27 @@
   }
 
   .profile-image img {
+    width: 180px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-name {
+    font-size: 1.8rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .home-link {
+    font-size: 1.6rem;
+  }
+
+  .profile-image img {
     width: 150px;
-    height: 150px;
-    margin-left: 0;
+    height: 180px;
   }
 }
 
