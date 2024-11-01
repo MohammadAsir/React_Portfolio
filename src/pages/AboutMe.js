@@ -19,6 +19,10 @@ function AboutMe() {
           Bachelor of Science in <strong>Economics and Computer Science</strong> (Expected May 2025)<br />
           GPA: <strong>3.692</strong>
         </p>
+        <p>
+          <strong>UWC, Changshu, China</strong><br />
+          <strong>International Baccalaureate</strong><br />
+        </p>
 
         <h3>Experience</h3>
         <p>
@@ -34,7 +38,7 @@ function AboutMe() {
         <p>
           <strong>Office Assistant at Campus Safety Department</strong> (March 2022 - Present)<br />
           Streamlined document management processes, enhancing efficiency.
-          <img src={profileImage2} alt="At Ard Labs" className="inline-image" />
+          <img src={profileImage2} alt="Mohammad Asir 2" className="inline-image" />
         </p>
 
         <h3>Skills</h3>
@@ -42,7 +46,7 @@ function AboutMe() {
           <li><strong>Programming Languages:</strong> Python, Java, C, JavaScript, Assembly</li>
           <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React, Node.js</li>
           <li><strong>Frameworks and Libraries:</strong> PyTorch, TensorFlow, Pandas, Matplotlib</li>
-          <li><strong>Tools and Platforms:</strong> Git, AWS, Linux, Jupyter Notebooks, Bash</li>
+          <li><strong>Tools and Platforms:</strong> Git, AWS, Linux(including socket programming), Jupyter Notebooks, Bash</li>
           <li><strong>Languages:</strong> Arabic (Native), English (Professional Proficiency)</li>
         </ul>
 

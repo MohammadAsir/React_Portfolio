@@ -8,6 +8,7 @@
 .main-content-text {
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 1.4rem;
 }
 
 .main-content-text h2,
@@ -19,7 +20,7 @@
 .main-content-text p,
 .main-content-text ul {
   color: #ccc;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 .main-content-text ul {
@@ -29,7 +30,7 @@
 
 /* Styling for inline images */
 .inline-image {
-  width: 120px; /* Adjusted size for smaller images */
+  width: 200px; /* Adjusted size for smaller images */
   height: auto;
   border-radius: 10px;
   margin: 0 0 15px 15px; /* Margin: top right bottom left */
