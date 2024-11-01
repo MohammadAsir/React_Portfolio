@@ -15,7 +15,7 @@ const projects = [
     technologies: 'HTML, CSS, JavaScript, React',
     description: 'A professional portfolio website developed with HTML, CSS, JavaScript, and React. This site showcases various projects, allowing visitors to browse academic and non-academic work. The site features a modern, responsive design, with project galleries and interactive components that highlight the developer’s skills and achievements.',
     url: 'https://mohammadasir.com',
-    githubUrl: 'https://github.com/MohammadAsir/portfolio-website',
+    githubUrl: 'https://github.com/MohammadAsir/React_Portfolio',
     isAcademic: false,
   },
   {
