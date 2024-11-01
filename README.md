@@ -106,6 +106,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries or feedback, please contact me at [mshakera@trincoll.edu](mailto:your.email@example.com).
+For any inquiries or feedback, please contact me at [mshakera@trincoll.edu](mailto:mshakera@trincoll.edu).
 
 Thank you for visiting my portfolio!
