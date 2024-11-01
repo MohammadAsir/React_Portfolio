@@ -11,6 +11,7 @@ Welcome to my personal developer portfolio! This project serves as a showcase fo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [AWS Hosting & SSL Certificate](#aws-hosting--ssl-certificate)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -63,7 +64,7 @@ After installation, start the development server with:
 npm start
 ```
 
-The portfolio will be available at `https://mohammadasir.com` by default.
+The portfolio will be available at `http://localhost:3000/` by default.
 
 ## Project Structure
 
@@ -95,6 +96,12 @@ React_Portfolio/
 - `src/`: Contains the source code, including components and pages.
 - `components/`: Reusable UI components.
 - `pages/`: Individual pages of the portfolio.
+
+## AWS Hosting & SSL Certificate
+
+This portfolio is hosted on **Amazon Web Services (AWS)**, leveraging AWS's scalable infrastructure for reliable and fast delivery. To ensure security, an **SSL certificate** has been installed, allowing for secure HTTPS connections. The SSL certificate helps protect user data and provides trustworthiness for visitors, accessible at:
+
+**https://mohammadasir.com**
 
 ## Contributing
 
