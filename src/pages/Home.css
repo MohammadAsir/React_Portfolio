@@ -1,16 +1,12 @@
-/* src/pages/Home.css */
-
-
 .home-container {
   display: flex;
-  min-height: 100vh; /* Allows the container to expand */
+  min-height: 100vh;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around; /* Adjusted */
   padding: 0 5%;
   position: relative;
-  overflow: hidden;
-  background-color: #252526; /* Static background color */
+  background-color: #252526;
 }
 
 .name-section {
@@ -18,7 +14,7 @@
 }
 
 .my-name {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
 }
 
@@ -29,7 +25,7 @@
 
 .home-link {
   display: block;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: #fff;
   text-decoration: none;
   margin-bottom: 1rem;
@@ -49,6 +45,7 @@
   from, to { border-color: transparent }
   50% { border-color: #fff }
 }
+
 .intro-text {
   font-size: 1.5rem;
   color: #ccc;
@@ -56,6 +53,7 @@
 }
 
 .profile-image {
+  flex: 1; /* Added */
   margin-top: 2rem;
   text-align: center;
 }
@@ -65,8 +63,9 @@
   height: 250px;
   border-radius: 25%;
   object-fit: cover;
-  margin-left: 120px;
+  /* Removed margin-left */
 }
+
 .typewriter {
   display: inline-block;
   overflow: hidden;
@@ -78,9 +77,14 @@
     typing 2.5s steps(30, end),
     blink-caret .5s step-end infinite;
 }
-.links-section {
-  flex: 1;
-  text-align: right;
+
+@media (max-width: 1650px) {
+  .home-link {
+    font-size: 2.3rem;
+  }
+  .my-name {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -88,7 +92,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 5%; /* Add some vertical padding */
+    padding: 2rem 5%;
   }
 
   .name-section {
@@ -100,13 +104,13 @@
     order: 2;
     margin-top: 2rem;
     text-align: center;
-    
   }
 
   .links-section {
     order: 3;
     margin-top: 2rem;
     text-align: center;
+    font-size: 1.9rem;
   }
 
   .my-name {
@@ -125,9 +129,10 @@
   }
 
   .profile-image img {
-    margin-left: 0; /* Center the image */
+    margin-left: 0;
   }
 }
+
 @media (max-width: 480px) {
   .my-name {
     font-size: 1.8rem;
@@ -147,6 +152,7 @@
     margin-left: 0;
   }
 }
+
 @media (max-width: 460px) {
   .my-name {
     font-size: 1.5rem;

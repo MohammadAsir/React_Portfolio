@@ -10,6 +10,15 @@ import websiteDevImg from '../img/web.jpg';
 
 const projects = [
   {
+    title: 'Website Development',
+    image: websiteDevImg,
+    technologies: 'HTML, CSS, JavaScript, React',
+    description: 'A professional portfolio website developed with HTML, CSS, JavaScript, and React. This site showcases various projects, allowing visitors to browse academic and non-academic work. The site features a modern, responsive design, with project galleries and interactive components that highlight the developer’s skills and achievements.',
+    url: 'https://mohammadasir.com',
+    githubUrl: 'https://github.com/MohammadAsir/portfolio-website',
+    isAcademic: false,
+  },
+  {
     title: 'FTP Server',
     image: ftpServerImg,
     technologies: 'C, Linux Sockets, File Transfer',
@@ -54,42 +63,53 @@ const projects = [
     githubUrl: 'https://github.com/yourgithub/diffusion-security',
     isAcademic: true,
   },
-  {
-    title: 'Website Development',
-    image: websiteDevImg,
-    technologies: 'HTML, CSS, JavaScript, React',
-    description: 'A professional portfolio website developed with HTML, CSS, JavaScript, and React. This site showcases various projects, allowing visitors to browse academic and non-academic work. The site features a modern, responsive design, with project galleries and interactive components that highlight the developer’s skills and achievements.',
-    url: 'https://example.com/portfolio-website',
-    githubUrl: 'https://github.com/MohammadAsir/portfolio-website',
-    isAcademic: false,
-  },
+  
 ];
 
 
 function Projects() {
   return (
-    <div className="gallery">
-      {projects.map((project, index) => (
-        <div 
-          className={`thumbnail ${project.isAcademic ? 'academic' : ''}`} 
-          key={index}
-        >
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="cards"
-              width="200"
-            />
-          </a>
-          <h4>{project.title}</h4>
-          <p className="tag">{project.technologies}</p>
-          <p className="text_column">{project.description}</p>
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="github-link">
-            View on GitHub
-          </a>
+    <div className="projects-page">
+      <h1 className="projects-heading">Projects</h1>
+      <div className="legend">
+        <div className="legend-item">
+          <span className="legend-color academic-color"></span>
+          <span>Academic Projects</span>
         </div>
-      ))}
+        <div className="legend-item">
+          <span className="legend-color non-academic-color"></span>
+          <span>Non-Academic Projects</span>
+        </div>
+      </div>
+
+      <div className="gallery">
+        {projects.map((project, index) => (
+          <div
+            className={`thumbnail ${project.isAcademic ? 'academic' : 'non-academic'}`}
+            key={index}
+          >
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="cards"
+                width="200"
+              />
+            </a>
+            <h4>{project.title}</h4>
+            <p className="tag">{project.technologies}</p>
+            <p className="text_column">{project.description}</p>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="github-link"
+            >
+              View on GitHub
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

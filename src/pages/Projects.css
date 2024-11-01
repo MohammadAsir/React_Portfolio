@@ -1,79 +1,141 @@
 /* src/pages/Projects.css */
 
+/* Color Variables */
+:root {
+  --academic-color: #4CAF50;    /* Green for academic projects */
+  --non-academic-color: #1c82b1; /* Blue for non-academic projects */
+}
+
+/* Projects Page Styles */
+.projects-page {
+  padding: 20px;
+}
+
+.projects-heading {
+  text-align: center;
+  color: #F8F8F8;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Legend Styles */
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  font-size: 1em;
+  color: #555;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.academic-color {
+  background-color: var(--academic-color);
+}
+
+.non-academic-color {
+  background-color: var(--non-academic-color);
+}
+
 /* Gallery Styles */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-  margin: 20px 0;
 }
 
+/* Thumbnail Styles */
 .thumbnail {
   flex: 1 1 30%;
   max-width: 32%;
-  margin: 1.5%;
+  margin: 1% 1%;
   text-align: center;
   background-color: #F8F8F8;
   border-radius: 3px;
-  border-bottom: 4px solid #1c82b1;
   overflow: hidden;
+  border-bottom: 4px solid;
 }
 
 .thumbnail.academic {
-  border-bottom-color: #4CAF50;
+  border-bottom-color: var(--academic-color);
 }
 
-/* Project Image Styling */
+.thumbnail.non-academic {
+  border-bottom-color: var(--non-academic-color);
+}
+
+/* Image Styling */
 .thumbnail img.cards {
   width: 100%;
-  height: 100px; /* Set a fixed height to cover top third */
-  object-fit: cover; /* Ensure the image fills the width without stretching */
+  height: 150px;
+  object-fit: cover;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-/* Project Content Styling */
-.thumbnail h4, .thumbnail p {
+/* Content Styling */
+.thumbnail h4,
+.thumbnail p {
   margin: 0;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
-.thumbnail p.text_column {
-  color: #7b8787; /* Dark gray color for better readability */
-  text-align: left;
-  padding: 0 20px;
-}
+
 .thumbnail h4 {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
-  color: #52BAD5;
   text-align: left;
+  color: var(--non-academic-color);
+}
+
+.thumbnail.academic h4 {
+  color: var(--academic-color);
 }
 
 .thumbnail .tag {
   color: #5D5E5D;
-  padding: 4px 20px;
   text-align: left;
+}
+
+.thumbnail p.text_column {
+  color: #7b8787;
+  text-align: left;
+  padding-bottom: 10px;
 }
 
 .github-link {
   display: block;
-  margin-top: 10px;
-  color: #1c82b1;
+  margin: 10px 20px 20px 20px;
+  text-align: left;
+  color: var(--non-academic-color);
   text-decoration: none;
   font-weight: bold;
 }
 
-.github-link:hover {
-  color: #4CAF50;
+.thumbnail.academic .github-link {
+  color: var(--academic-color);
 }
 
-/* Responsive adjustments */
+.github-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .thumbnail {
     flex: 1 1 45%;
     max-width: 45%;
-    margin: 2%;
+    margin: 2% 2%;
   }
 }
 
