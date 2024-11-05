@@ -6,14 +6,14 @@
 }
 
 .main-content-text {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 1.4rem;
 }
 
 .main-content-text h2,
 .main-content-text h3 {
-  color: orange; /* Changed heading color to orange */
+  color: orange; 
   margin-bottom: 1rem;
 }
 
@@ -28,25 +28,50 @@
   padding-left: 20px;
 }
 
-/* Styling for inline images */
 .inline-image {
-  width: 200px; /* Adjusted size for smaller images */
+  width: 200px; 
   height: auto;
   border-radius: 10px;
-  margin: 0 0 15px 15px; /* Margin: top right bottom left */
-  float: right; /* Images float to the right */
+  margin: 0 0 15px 15px; 
+  float: right; 
 }
 
-/* Clear floats */
 .main-content-text::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Removed .highlight class as it's no longer needed */
 
-/* Responsive adjustments */
+.experience-entry {
+  margin-bottom: 2rem; 
+  
+}
+
+.experience-entry:last-child {
+  margin-bottom: 0;
+}
+
+
+.button-container {
+  margin: 20px 0; 
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: orange; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #cc8400; 
+}
+
 @media (max-width: 768px) {
   .inline-image {
     float: none;
