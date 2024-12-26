@@ -25,7 +25,7 @@ function AboutMe() {
         <p>
           <strong>Trinity College, Hartford, CT</strong><br />
           Bachelor of Science in <strong>Economics and Computer Science</strong> (Expected May 2025)<br />
-          GPA: <strong>3.692</strong>
+          GPA: <strong>3.715</strong>
         </p>
         <p>
           <strong>UWC, Changshu, China</strong><br />

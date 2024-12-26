@@ -60,7 +60,7 @@ const projects = [
     technologies: 'Python, Machine Learning, Security',
     description: 'An academic project exploring advanced machine learning techniques, focusing on diffusion models and dynamic graphs for enhanced security applications. The project aims to model and analyze data flow and security patterns within networks, providing insights into how these tools can improve network resilience against security threats. The project is ongoing, with research directed toward potential real-world applications in cybersecurity.',
     url: 'https://example.com/diffusion-graphs',
-    githubUrl: 'https://github.com/yourgithub/diffusion-security',
+    githubUrl: 'https://github.com/tarek-debug/NetSecDiffusion',
     isAcademic: true,
   },
   
