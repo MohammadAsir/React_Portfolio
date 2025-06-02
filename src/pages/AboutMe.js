@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import profileImage1 from '../img/profile2.JPG';
+import profileImage1 from '../img/profile2.jpg';
 import profileImage2 from '../img/profile1.jpg';
 
 
