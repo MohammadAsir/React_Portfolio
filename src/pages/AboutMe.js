@@ -24,8 +24,8 @@ function AboutMe() {
         <h3>Education</h3>
         <p>
           <strong>Trinity College, Hartford, CT</strong><br />
-          Bachelor of Science in <strong>Economics and Computer Science</strong> (Expected May 2025)<br />
-          GPA: <strong>3.715</strong>
+          Bachelor of Science in <strong>Economics and Computer Science</strong> (May 2025)<br />
+          GPA: <strong>3.742</strong>
         </p>
         <p>
           <strong>UWC, Changshu, China</strong><br />
@@ -130,10 +130,10 @@ function AboutMe() {
         {/* Skills Section */}
         <h3>Skills</h3>
         <ul>
-          <li><strong>Programming Languages:</strong> Python, Java, C, JavaScript, Assembly</li>
+          <li><strong>Programming Languages:</strong> Python, Java, C, JavaScript, Assembly, SQL, NoSQL</li>
           <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React, Node.js</li>
-          <li><strong>Frameworks and Libraries:</strong> PyTorch, TensorFlow, Pandas, Matplotlib</li>
-          <li><strong>Tools and Platforms:</strong> Git, AWS, Linux (including socket programming), Jupyter Notebooks, Bash</li>
+          <li><strong>Frameworks and Libraries:</strong> PyTorch, TensorFlow, Pandas, Matplotlib, NumPy</li>
+          <li><strong>Tools and Platforms:</strong> Git, AWS, Linux (including socket programming), Jupyter Notebooks, Bash, SQL</li>
           <li><strong>Languages:</strong> Arabic (Native), English (Professional Proficiency)</li>
         </ul>
 

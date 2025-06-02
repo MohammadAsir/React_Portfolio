@@ -7,6 +7,7 @@ import cacheSimulatorImg from '../img/cache.jpg';
 import weatherProjectImg from '../img/weather.jpg';
 import diffusionGraphsSecurityImg from '../img/diffusion.jpg';
 import websiteDevImg from '../img/web.jpg';
+import peakRanksImg from '../img/peak_ranks.jpg';
 
 const projects = [
   {
@@ -63,7 +64,15 @@ const projects = [
     githubUrl: 'https://github.com/tarek-debug/NetSecDiffusion',
     isAcademic: true,
   },
-  
+  {
+    title: 'PeakRanks',
+    image: peakRanksImg,
+    technologies: 'Python, Flask, SQLAlchemy, SQLite, HTML, CSS, JavaScript',
+    description: 'PeakRanks is a web application that lets competitive gamers record, display, and compare their highest in-game ranks across titles like CS:GO, League of Legends, Rainbow Six Siege, Valorant, Overwatch, and Deadlock. Users can create profiles, link game accounts, join teams, earn achievement badges, and view leaderboards to showcase their peak performance.',
+    url: 'https://example.com/PeakRanks',
+    githubUrl: 'https://github.com/MohammadAsir/PeakRanks',
+    isAcademic: true,
+  },
 ];
 
 
